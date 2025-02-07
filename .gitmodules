@@ -2,3 +2,4 @@
 [submodule "_sass/vanilla-framework"]
 	path = _sass/vanilla-framework
 	url = https://github.com/canonical/vanilla-framework.git
+	branch = main
