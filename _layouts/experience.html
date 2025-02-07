@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<header class="page-header">
+  <h1 class="page-title">{{ page.title | escape }}</h1>
+</header>
+<section id="experiences">
+  {%- for experience_hash in site.data.experiences[page.lang] reversed -%}
+  {%- assign experience = experience_hash[1] -%}
+  <article id="experience--{{ experience.sdate | slugify }}--{{ experience.company | slugify }}--{{ experience.edate | slugify }}">
+    <h3> {{experience.title}} </h3> 
+    <h4>
+      <large>{{experience.sdate}}</large> {{experience.company}} <large>{{experience.edate}}</large>
+    </h4>
+    {{ experience.content | markdownify }}
+  </article>
+  {%- endfor -%}
+</section>

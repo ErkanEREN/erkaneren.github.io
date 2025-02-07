@@ -1,0 +1,16 @@
+{
+    "name": "E 🇹🇷34349, Engineer (BSc.)",
+    "short_name": "Erkan EREN",
+    "icons": [
+        {
+            "src": "/assets/favicon.svg",
+            "type": "image/svg"
+        }
+    ],
+    "theme_color": "#450900",
+    "background_color": "#686766",
+    "start_url": "/",
+    "scope": "/",
+    "display": "minimal-ui",
+    "display-override": "minimal-ui"
+}

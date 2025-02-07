@@ -1,0 +1,12 @@
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://localhost" # the base hostname & protocol for your site, e.g. http://example.com
+port: 80
+host: "localhost"
+livereload: true
+watch: true
+verbose: true
+incremental: true
+sass:
+    style: expaned #
+    sourcemap: always #
+

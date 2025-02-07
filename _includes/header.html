@@ -1,0 +1,47 @@
+<header class="site-header p-navigation is-sticky" role="navigation" >
+    
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_paths = site.header_pages | default: default_paths -%}
+  <style>
+    .p-navigation:has(.p-navigation__link--menu-toggle){
+      input.p-navigation__link--menu-toggle {
+        appearance: unset;
+        display: inline-flex;
+        &:checked{
+          transform: rotate(180deg);
+        }
+      }
+      &:has(.p-navigation__link--menu-toggle:checked) .p-navigation__nav {display: initial; .p-navigation__items{display: initial;}}
+    }
+  </style>
+    <div class="p-navigation__banner">
+      <div class="p-navigation__tagged-logo">
+        <a class="p-navigation__link" href="/#">
+          <div class="e-navigation__logo-tag">
+            <img class="" src="{{ "assets/favicon.svg" | relative_url  }}" alt="{{ site.title | escape }}">
+          </div>
+          <span class="p-navigation__logo-title">{{ site.title | escape }}</span>
+        </a>
+      </div>
+      <ul class="p-navigation__items">
+        <li class="p-navigation__item">
+          <input type="checkbox" class="nav-trigger p-navigation__link--menu-toggle"  aria-controls="navigation" title="Toggle navigation" aria-label="Toggle navigation">
+        </li>
+      </ul>
+    </div>
+    {%- if page_paths -%}
+    <nav class="p-navigation__nav" aria-label="{{ site.title | escape }}">
+      <ul class="p-navigation__items">
+        {%- for path in page_paths -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+            <li class="p-navigation__item ">
+              <a class="page-link p-navigation__link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+            </li>
+          {%- endif -%}
+        {%- endfor -%}
+      </ul>
+    </nav>
+    {%- endif -%}
+    </div>
+</header>

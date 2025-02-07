@@ -1,0 +1,61 @@
+backend:
+  name: github
+  repo: ErkanEREN/erkaneren
+  branch: main # retconing naming conventions because master-slave flip-flops ceased to exist
+publish_mode: editorial_workflow
+media_folder: assets/images/uploads
+collections:
+  - name: projects
+    label: Projects
+    folder: _data/projects
+    create: true
+    extension: yml
+    fields:
+      - { name: title, label: Title, widget: string, i18n: true }
+      - { name: description, label: Description, widget: markdown, i18n: true }
+      - { name: content, label: Content, widget: markdown, i18n: true }
+    i18n:
+      en:
+        label: Projects (English)
+      tr:
+        label: Projeler (Türkçe)
+
+  - name: experiences
+    label: Experiences
+    folder: _data/experiences
+    create: true
+    extension: yml
+    identifier_field: id
+    fields:
+      - { name: 'title', label: 'Title', widget: 'string', i18n: true }
+      - { name: 'sdate', label: 'Start Date', widget: 'datetime', date_format: "MMMM YYYY", time_format: false, format: "MMMM YYYY", i18n: duplicate }
+      - { name: 'edate', label: 'End Date', widget: 'datetime', date_format: "MMMM YYYY", time_format: false, format: "MMMM YYYY", i18n: duplicate }
+      - { name: 'company', label: 'Company', widget: 'string', i18n: true }
+      - { name: 'content', label: 'Content', widget: 'markdown', i18n: true }
+      - { name: 'id', label: 'Order', widget: 'number', i18n: duplicate }
+    i18n:
+      en:
+        label: Experiences (English)
+      tr:
+        label: Tecrübeler (Türkçe)
+
+  - name: blog
+    label: Blog
+    folder: _posts
+    create: true
+    extension: yml
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}' 
+    fields:
+      - { name: title, label: Title, widget: string, i18n: true }
+      - { name: date, label: Date, widget: 'datetime', date_format: "DD MMMM/YY", time_format: "HH:MM", format: "DD MMMM/YY", i18n: duplicate }
+      - { name: content, label: Content, widget: markdown, i18n: true }
+    i18n:
+      en:
+        label: Blog (English)
+      tr:
+        label: Blog (Türkçe)
+
+i18n:
+  default_locale: en
+  structure: multiple_folders
+  locales: [en, tr]

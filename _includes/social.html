@@ -1,0 +1,55 @@
+<ul class="p-inline-list--middot">
+  {%- if site.linkedin_username -%}<li class="p-inline-list__item">
+    <a href="https://www.linkedin.com/in/{{ site.linkedin_username| cgi_escape | escape }}">
+      <i class="p-icon--linkedin"></i>
+{{ site.linkedin_username| escape }}
+    </a>
+  </li>{%- endif -%}
+  {%- if site.email -%}<li class="p-inline-list__item">
+    <a href="mailto:{{ site.email }}">
+      <i class="p-icon--email"></i>
+{%- if site.author -%}
+        {{ site.author | escape }}
+        {%- else -%}
+        {{ site.title | escape }}
+        {%- endif -%}
+    </a>
+  </li>{%- endif -%}
+  {%- if site.github_username -%}<li class="p-inline-list__item">
+    <a href="https://github.com/{{ site.github_username| cgi_escape | escape }}">
+      <i class="p-icon--github"></i>
+{{ site.github_username| escape }}
+    </a>
+  </li>{%- endif -%}
+  {%- if site.twitter_username -%}<li class="p-inline-list__item">
+    <a href="https://www.twitter.com/{{ site.twitter_username| cgi_escape | escape }}">
+      <i class="p-icon--twitter"></i>
+{{ site.twitter_username| escape }}
+    </a>
+  </li>{%- endif -%}
+  {%- if site.youtube_username -%}<li class="p-inline-list__item">
+    <a href="https://youtube.com/{{ site.youtube_username| cgi_escape | escape }}">
+      <i class="p-icon--youtube"></i>
+{{ site.youtube_username| escape }}
+    </a>
+  </li>{%- endif -%}
+  {%- if site.rss_path -%}<li class="p-inline-list__item">
+    <a href="{{ site.rss_path | relative_url }}">
+      <i class="p-icon--rss"></i>
+RSS
+    </a>
+  </li>{%- endif -%}
+  {%- if site.instagram_username -%}<li class="p-inline-list__item">
+    <a href="https://instagram.com/{{ site.instagram_username| cgi_escape | escape }}">
+      <i class="p-icon--instagram"></i>
+{{ site.instagram_username| escape }}
+    </a>
+  </li>{%- endif -%}
+  {%- if site.facebook_username -%}<li class="p-inline-list__item">
+    <a href="https://www.facebook.com/{{ site.facebook_username| cgi_escape | escape }}">
+      <i class="p-icon--facebook"></i>
+{{ site.facebook_username| escape }}
+    </a>
+  </li>{%- endif -%}
+
+</ul>

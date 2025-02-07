@@ -1,0 +1,24 @@
+---
+---
+@import "vanilla-framework";
+
+
+@import 'vanilla-framework/scss/global_functions';
+
+@import 'vanilla-framework/scss/settings_spacing';
+@import 'vanilla-framework/scss/settings_animations';
+@import 'vanilla-framework/scss/settings_assets';
+@import 'vanilla-framework/scss/settings_breakpoints';
+@import 'vanilla-framework/scss/settings_colors';
+@import 'vanilla-framework/scss/settings_font';
+@import 'vanilla-framework/scss/settings_grid';
+@import 'vanilla-framework/scss/settings_placeholders';
+@import 'vanilla-framework/scss/settings_tables';
+@import 'vanilla-framework/scss/settings_themes';
+
+
+:root{
+    --vf-FLAG-ON: initial;
+    --vf-FLAG-OFF: ;
+    @include vf-theme-paper;
+};

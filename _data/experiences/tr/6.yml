@@ -1,0 +1,26 @@
+title: Yazılım Mühendisi
+sdate: April 2018
+edate: March 2019
+company: Konzek Teknoloji
+content: >-
+  * Üretim Yürütme (MES), Üretim Verimliliği (OEE), Çevresel İzleme, Enerji
+  Yönetimi, Sistem Otomasyonu ve Süreç Kontrolü gibi alanlarda Endüstri 4.0
+  uyumlu çözümler geliştirdim.
+
+  * Yedi kişilik bir yazılım geliştirme ekibinin parçası olarak iş birliği yaptım.
+
+
+  * **DCT Serisi:**
+    * Hem ön uç hem de arka uç **(Node.js)** için minimal ayak izi ile **HTML, CSS** ve sade **JavaScript** kullandım.
+    * Kritik durumlar için **JavaScript** üzerinde profil oluşturma ve hata ayıklama yaptım.
+    * Ana kartın GPIO pinleri ve sistem iç işleyişi dahil olmak üzere veri toplama üzerinde çalıştım.
+    * AT+ komutları kullanarak 3G USB modem yanlış davranışları gibi uç durumları çözdüm.
+
+  * **DCIM:**
+    * İzleme ve alarm görselleştirme için gelişmiş **UX** öğeleri uyguladım.
+    * Isı haritası ve/veya alarm/sensör verileri ile kaplanmış esnek bağlantılı haritalar oluşturdum.
+
+  * **Retmes:**
+    * Hem arka uç tarafında **(mikro mimari, bulut öncelikli, JavaScript, Node.js)** hem de ön uç **(React, JavaScript, Redux)** üzerinde çalıştım.
+    * Endüstriyel ihtiyaçları karşılamak için en iyi uygulamalara uyarak zorlu kullanıcı arayüzlerini uyguladım.
+id: 6

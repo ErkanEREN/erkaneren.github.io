@@ -1,0 +1,26 @@
+title: Software Engineer
+sdate: April 2018
+edate: March 2019
+company: Konzek Technology
+content: >-
+  * Developed Industry 4.0 compliant solutions in areas such as Manufacturing
+  Execution (MES), Production Efficiency (OEE), Environmental Monitoring, Energy
+  Management, System Automation, and Process Control.
+
+  * Collaborated as part of a seven-member software development team.
+
+
+  * **DCT Series:**
+    * Utilized **HTML, CSS** and plain **JavaScript** for both frontend and backend **(Node.js)** with minimal footprint. 
+    * Performed profiling and debugging on **JavaScript** for critical cases.
+    * Worked on data collection, including GPIO pins of the mainboard and system inner workings.
+    * Resolved edge cases, such as 3G USB modem misbehavior using AT+ commands.
+
+  * **DCIM:** 
+    * Implemented advanced **UX** elements for monitoring and alarm visualization. 
+    * Created flexibly linkable maps overlaid with heatmap and/or alarm/sensor data. 
+
+  * **Retmes:** 
+    * Worked on both backend **(Micro architecture, Cloud-first, JavaScript, Node.js)** and frontend **(React, JavaScript, Redux).**
+    * Implemented challenging **UIs** to meet industrial needs while adhering to best practices.
+id: 6

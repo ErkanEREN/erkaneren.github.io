@@ -1,0 +1,22 @@
+title: Yazılım Mühendisi
+sdate: December 2017
+edate: March 2018
+company: Digitoy Games
+content: >-
+  * Aylık 300 bin aktif kullanıcısı olan bir mobil ve web oyun şirketinde, poker
+  ve yerel Rummy versiyonları gibi oyunları geliştirdim ve bakımını yaptım.
+
+  * Altı kişilik teknik ekibin bir parçasıydım.
+
+  * Düşük gecikmeli, ölçeklenebilir hizmetler tasarladım ve uyguladım.
+
+  * Yeni platformlar için **API**’leri güncelledim.
+
+  * Mevcut **Java sunucu mimarisini** geliştirdim ve iyileştirdim.
+
+  * İstemci tarafında arka uç hizmetlerinin doğru uygulanmasını sağladım.
+
+  * Eski kod tabanını **(Java, SQL, PL-SQL, JavaScript)** yönettim.
+
+  * **Nginx ters proxy** ve **Apache** yapılandırması dahil olmak üzere kendi kendini yöneten **Java** sunucularının bakımını yaptım.
+id: 5
