@@ -43,7 +43,7 @@ jobs:
       - name: Build with Jekyll
         uses: gha-utilities/jekyll-build@v0.1.1
         with:
-          source: ./
+          source: ./_config.yml
         # Outputs to the './_site' directory by default
         # run: bundle exec jekyll build --trace --config "./_config.yml" --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
