@@ -37,16 +37,11 @@ jobs:
         with:
           submodules: true
           repository: canonical/vanilla-framework
-          path: _sass/vanilla-framework
+          path: ./_sass/vanilla-framework
       - name: Build
         uses: actions/jekyll-build-pages@v1
-        with:
-          verbose: true
-          destination: /_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
-        with:
-          path: /_site
   # Deployment job
   deploy:
     environment:
