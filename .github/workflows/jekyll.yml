@@ -30,8 +30,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Install Dart Sass
-        run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -42,9 +40,9 @@ jobs:
         # https://github.com/ruby/setup-ruby/releases/tag/v1.207.0
         uses: ruby/setup-ruby@4a9ddd6f338a97768b8006bf671dfbad383215f4
         with:
-          ruby-version: '3.1' # Not needed with a .ruby-version file
+          ruby-version: '3.3.6' # Not needed with a .ruby-version file
           bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-          cache-version: 0 # Increment this number if you need to re-download cached gems
+          cache-version: 1 # Increment this number if you need to re-download cached gems
       - name: Build with Jekyll
         run: |
           gem install jekyll bundler;
@@ -52,10 +50,6 @@ jobs:
           bundle exec jekyll build;
         env:
           JEKYLL_ENV: production
-      - name: Build
-        uses: actions/jekyll-build-pages@v1
-        with:
-          verbose: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
   # Deployment job
