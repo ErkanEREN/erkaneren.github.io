@@ -30,6 +30,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Install Dart Sass
+        run: sudo snap install dart-sass
       - name: Checkout
         uses: actions/checkout@v4
         with:
@@ -37,8 +39,8 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Build with Jekyll
-        # Outputs to the './_site' directory by default
         run: |
+          gem install jekyll bundler;
           bundle install;
           bundle exec jekyll build;
         env:
