@@ -42,12 +42,11 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           verbose: true
-          source: /github/workspace
-          destination: /github/workspace/_site
+          destination: /_site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: /github/workspace/_site
+          path: /_site
   # Deployment job
   deploy:
     environment:
