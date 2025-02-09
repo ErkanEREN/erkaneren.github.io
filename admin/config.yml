@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: ErkanEREN/erkaneren
+  repo: ErkanEREN/erkaneren.github.io
   branch: main # retconing naming conventions because master-slave flip-flops ceased to exist
 publish_mode: editorial_workflow
 media_folder: assets/images/uploads
