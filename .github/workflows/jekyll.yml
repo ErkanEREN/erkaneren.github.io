@@ -25,7 +25,6 @@ permissions:
 concurrency:
   group: "pages"
   cancel-in-progress: false
-
 jobs:
   # Build job
   build:
@@ -38,16 +37,11 @@ jobs:
           repository: canonical/vanilla-framework
           path: _sass/vanilla-framework
       - name: Setup Pages
-        id: pages
         uses: actions/configure-pages@v5
-      - name: Build with Jekyll
+      - name: Build
         uses: actions/jekyll-build-pages@v1
-        env:
-          JEKYLL_ENV: production
       - name: Upload artifact
-        # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v3
-
   # Deployment job
   deploy:
     environment:
