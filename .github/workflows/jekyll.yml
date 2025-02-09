@@ -42,7 +42,6 @@ jobs:
         uses: actions/jekyll-build-pages@v1
         with:
           destination: "_site"
-          source: ""
           verbose: true
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
