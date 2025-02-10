@@ -9,10 +9,11 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [ 80 ]
+	"forwardPorts": [ 80 ],
 
 	// Uncomment the next line to run commands after the container is created.
-	// "postCreateCommand": "",
+	"postCreateCommand": "git submodule update --init --recursive;",
+	"postStartCommand": "rm -rf _site .jekyll-cache/ ; clear ; bundle exec jekyll serve --config _devPatch.yml,_config.yml --trace"
 
 	// Configure tool-specific properties.
 	// "customizations": {},
