@@ -9,7 +9,7 @@
 	// "features": {},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [ 80 ],
+	"appPort": [ 80 ],
 
 	// Uncomment the next line to run commands after the container is created.
 	"postCreateCommand": "git submodule update --init --recursive;",
